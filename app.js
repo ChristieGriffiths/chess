@@ -20,7 +20,14 @@ function createBoard() {
     square.classList.add('square');
     square.innerHTML = startPiece
     square.setAttribute('square-id', i)
-    square.classList.add('beige');
+    const row = Math.floor( (63 - i) / 8) + 1
+    if (row % 2 === 0) {
+      square.classList.add(i % 2 === 0 ? "white" : "green")
+    } else {
+      square.classList.add(i % 2 === 0 ? "green" : "white")
+    }
+
+    square.classList.add("centered");
     gameBoard.append(square);
   });
 }

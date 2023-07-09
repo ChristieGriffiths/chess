@@ -10,11 +10,17 @@
   width: 40px;
 }
 
-.beige {
-  background-color: rgb(110, 110, 98);
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.brown {
-  background-color: rgb(184, 48, 48);
+.white {
+  background-color: rgb(249, 249, 242);
+}
+
+.green {
+  background-color: rgb(38, 172, 80);
 }
 
