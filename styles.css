@@ -8,6 +8,24 @@
 .square {
   height: 40px;
   width: 40px;
+  position: relative;
+}
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  position: relative;
+  z-index: -9
+}
+
+path {
+  position: relative;
+  z-index: -10;
+}
+
+.piece {
+  position: relative;
+  z-index: 9;
 }
 
 .centered {
@@ -16,11 +34,20 @@
   align-items: center;
 }
 
-.white {
-  background-color: rgb(249, 249, 242);
+.grey {
+  background-color: rgb(182, 182, 174);
 }
 
 .green {
   background-color: rgb(38, 172, 80);
+}
+
+.black {
+  fill: black
+}
+
+.white {
+  fill: white
+  /* border: 1px solid black; */
 }
 
