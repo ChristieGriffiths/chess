@@ -65,12 +65,23 @@ function dragOver(e) {
 }
 
 function dragDrop(e) {
-  // stop piece being dropped into two or more squares.
-  e.stopPropagation();
-  const taken = e.target.classList.contains('piece');
-  e.target.parentNode.append(draggedElement);
-  e.target.remove();
+  e.stopPropagation()
+  console.log(e.target)
+  const taken = e.target.class.contains('piece')
+  // e.target.parentNode.append(draggedElement)
+  // e.target.remove()
   // e.target.append(draggedElement)
+  changePlayer()
+}
+
+function Player() {
+  if (playerGo === "black") {
+    playerGo = "white"
+    playerDisplay.textContent = "white"
+  } else {
+    playerGo = "black"
+    playerDisplay.textContent = "black"
+  }
 }
 
 
